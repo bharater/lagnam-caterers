@@ -1,0 +1,153 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: #38b6ff;
+    backdrop-filter: blur(15px);
+}
+
+.navbar a {
+    color: white !important;
+}
+
+.navbar-nav .nav-link {
+    color: white !important;
+}
+
+.footer {
+    background-color: #ffca2a;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+/* Custom Styles */
+.uniform-image {
+    height: 300px; /* Set a fixed height */
+    object-fit: cover; /* Maintain aspect ratio and cover the entire area */
+}
+
+.fixed-top {
+    position: sticky;
+    top: 0;
+    z-index: 1030;
+}
+
+/* Additional responsive styles if needed */
+@media (max-width: 576px) {
+    .card-body h4 {
+        font-size: 1.2rem;
+    }
+    /* Custom Styles */
+.uniform-image {
+    height: 450px; /* Set a fixed height */
+    object-fit: cover; /* Maintain aspect ratio and cover the entire area */
+}
+
+}
+/* Custom Styles */
+
+
+/* .navbar-custom { */
+    /* background-color: #38b6ff; Your custom background color */
+/* } */
+
+
+/* Adjust padding for body to accommodate fixed navbar */
+/* Custom navbar toggler icon */
+.navbar-custom .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0, 0, 0, 0.5)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-custom .navbar-toggler {
+    border-color: rgba(0, 0, 0, 0.1);
+}
+
+/* For a light colored navbar with dark toggler */
+.navbar-custom.navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0, 0, 0, 0.5)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* For a dark colored navbar with light toggler */
+.navbar-custom.navbar-dark .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 0.5)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Source+Sans+Pro:wght@300;400;600&display=swap');
+
+/* Font styling for navbar brand (Logo text) */
+.navbar-brand {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    font-size: 1.8rem;
+    letter-spacing: 0.5px;
+}
+
+/* Font styling for navigation items */
+.navbar-nav .nav-link {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size: 1.1rem;
+    letter-spacing: 0.3px;
+}
+
+/* Headings throughout the site */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+}
+
+/* Body text */
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+/* Alternative elegant combinations you can uncomment and use:
+
+/* Option 2: Cormorant Garamond & Montserrat */
+/*
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500&display=swap');
+
+.navbar-brand {
+    font-family: 'Cormorant Garamond', serif;
+}
+.navbar-nav .nav-link, body {
+    font-family: 'Montserrat', sans-serif;
+}
+*/
+
+/* Option 3: Lora & Open Sans */
+/*
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap');
+
+.navbar-brand {
+    font-family: 'Lora', serif;
+}
+.navbar-nav .nav-link, body {
+    font-family: 'Open Sans', sans-serif;
+}
+*/
+

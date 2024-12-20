@@ -1,0 +1,158 @@
+/* Add this to your styles.css file */
+
+/* Smooth scrolling for entire page */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Fade In Animation */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Service Card Hover Animation */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Menu Item Scale Animation */
+.menu-item {
+    transition: transform 0.3s ease;
+}
+
+.menu-item:hover {
+    transform: scale(1.02);
+}
+
+/* Mobile-Optimized Menu Image Containers */
+.uniform-image {
+    height: 200px;
+    object-fit: cover;
+    width: 100%;
+}
+
+/* Improved Mobile Button Styles */
+.btn {
+    padding: 12px 24px;
+    touch-action: manipulation;
+}
+
+/* Mobile-friendly Sticky Header */
+.sticky-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.header-hidden {
+    transform: translateY(-100%);
+}
+
+/* Pulse Animation for CTA Buttons */
+.btn-pulse {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Mobile-Optimized Gallery */
+.carousel-item img {
+    height: 300px;
+    object-fit: cover;
+}
+
+/* Smooth Testimonial Carousel */
+.testimonial-slide {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.testimonial-slide.active {
+    opacity: 1;
+}
+
+/* Mobile-Friendly Social Media Icons */
+.social-icon {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+}
+
+/* Enhanced Mobile Menu */
+@media (max-width: 768px) {
+    .jumbotron {
+        padding: 2rem 1rem;
+    }
+    
+    .card {
+        margin-bottom: 1rem;
+    }
+    
+    .container {
+        padding: 0 15px;
+    }
+    
+    .btn {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+    
+    .carousel-item img {
+        height: 200px;
+    }
+}
+
+/* Shimmer Effect for Loading States */
+.shimmer {
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: -200% 0;
+    }
+    100% {
+        background-position: 200% 0;
+    }
+}
+
+/* Smooth Service Icons Animation */
+.service-icon {
+    transition: transform 0.3s ease;
+}
+
+.service-icon:hover {
+    transform: rotate(10deg);
+}
